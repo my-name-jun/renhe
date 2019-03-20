@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>success</title>
+</head>
+<body :controller="vm" class="ms-controller">
+<!-- GEN_COMPONENT -->
+    <div>
+        <img :attr="{src:@nj15}" alt="" class="header_icon">
+        <img :attr="{src:@nj16}" alt="" class="content_icon">
+        <h3 class="deepen_word">您的信息提交成功</h3>
+        <p class="content_word">我们的服务人员将在1个工作日内向您致电，<br>敬请留意。</p>
+        <a  data-toggle="modal" data-target="" href=""  onclick="return false;">
+            <img :attr="{src:@nj17}" alt="" class="footer_icon" :click="receive">
+        </a>
+    </div>
+    <!-- GEN_FOOTER -->
+
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="margin: 38% auto auto;width: 80%">
+        <div class="modal-content">
+            <div class="modal-body" id="content1">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    <img :attr="{src:@nj14}" alt="" class="modal_img">
+                </button>
+
+                <img :attr="{src:@qrcode}" alt="" class="content_img" style="width: 60%;margin: 10% auto 5%;">
+
+                <div class="footer_content_word">
+                    请用手指按住上方二维码3秒<br>将图片「保存」到手机上
+                </div>
+                <div class="footer_button" :click="button1(1)">
+                    下一步
+                </div>
+            </div>
+
+            <div class="modal-body" id="content2" style="display: none">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    <img :attr="{src:@nj14}" alt="" class="modal_img">
+                </button>
+
+                <img :attr="{src:@step2}" alt="" class="content_img" style="margin-bottom: 10%">
+
+                <div class="footer_content_word">
+                    打开微信客户端<br>点击右上角的「扫一扫」
+                </div>
+                <div class="footer_button2">
+                    <span class="footer_button2_left" :click="button1(2)">上一步</span>
+                    <span class="footer_button2_right" :click="button1(3)">下一步</span>
+                </div>
+            </div>
+
+            <div class="modal-body" id="content3" style="display: none">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    <img :attr="{src:@nj14}" alt="" class="modal_img">
+                </button>
+
+                <img :attr="{src:@step3}" alt="" class="content_img">
+
+                <div class="footer_content_word">
+                    点击右上角的「相册」<br>从本地选取刚才保存的二维码
+                </div>
+                <div class="footer_button2">
+                    <span class="footer_button2_left" :click="button1(4)">上一步</span>
+                    <span class="footer_button2_right" :click="button1(5)">下一步</span>
+                </div>
+            </div>
+
+            <div class="modal-body" id="content4" style="display: none">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    <img :attr="{src:@nj14}" alt="" class="modal_img">
+                </button>
+
+                <img :attr="{src:@step4}" alt="" class="content_img">
+
+                <div class="footer_content_word">
+                    关注成功后<br>回复“体验”获取兑换入口及口令
+                </div>
+                <div class="footer_button" :click="button1(6)">
+                    上一步
+                </div>
+            </div>
+        </div>
+        </div><!-- /.modal-content -->
+    <div class="footer_icon4">
+        <img :attr="{src:@a_point}" alt="" id="icon1">
+        <img :attr="{src:@u_point}" alt="" id="icon2">
+        <img :attr="{src:@u_point}" alt="" id="icon3">
+        <img :attr="{src:@u_point}" alt="" id="icon4">
+    </div>
+    </div><!-- /.modal -->
+</body>
+
+</html>
+
+

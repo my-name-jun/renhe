@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>wnx</title>
+</head>
+<body :controller="vm" class="ms-controller">
+<!-- GEN_COMPONENT -->
+    <div class="home">
+        <div class="home_bck">
+            <div class="bck_words">历史年化结算利率</div>
+            <span class="bck_number">{{@number}}<sub>%</sub></span>
+        </div>
+
+        <div class="content">
+            保底收益&nbsp;|&nbsp;中长期首选&nbsp;|&nbsp;已预约<span style="color: #F5CC57">{{@people}}</span>人
+        </div>
+
+        <a  data-toggle="modal" data-target="" href=""  onclick="return false;"><div class="submit_appointment" :click="submit">预约咨询</div></a>
+
+        <p class="remarks">最低保证利率为3%，超过保证利率部分不保证</p>
+
+        <div class="chart_title">
+            和聚宝历史年化利率走势
+        </div>
+
+        <img :attr="{src:@m2}" alt="" class="chart">
+
+        <div class="company_title">
+            公司介绍
+        </div>
+
+        <p class="company_content">
+            招商仁和人寿，由招商局、中国移动等共同发起<br>设立，注册资本50亿，源自1875年民族保险品牌
+        </p>
+
+        <img :attr="{src:@m3}" alt="" class="footer_ican">
+        <img :attr="{src:@m4}" alt="" class="footer_ican" style="width: 21%">
+    </div>
+    <!-- GEN_FOOTER -->
+
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content" style="margin: 30% auto 0;border-radius: 15px;width: 94%">
+            <div class="modal-body">
+                <div class="input_form" style="margin-top: 5%">
+                    <input type="text" placeholder="请输入您的姓名" id="name">
+                </div>
+                <div class="input_form">
+                    <input type="text" placeholder="请输入联系方式" id="phone" maxlength="11">
+                    <span class="code_input" :click="if_code" id="send">
+                        {{@code_w}}
+                    </span>
+                    <span class="count_down" id="down">{{@count}}</span>
+                </div>
+                <div class="input_form">
+                    <input type="text" placeholder="请输入验证码" id="code">
+                </div>
+                <div class="input_form">
+                    <span class="back_word">回电时间要求</span>
+                    <select name="" id="time">
+                        <option value="" value="10" selected>上午10:00-11点</option>
+                        <option value="" value="11">上午11:00-12点</option>
+                        <option value="" value="13">下午13:00-14点</option>
+                        <option value="" value="14">下午14:00-15点</option>
+                        <option value="" value="15">下午15:00-16点</option>
+                    </select>
+                    <span style="color: #A1A1A1;font-size: 1.6em">&gt;</span>
+                </div>
+
+                <div class="sure_submit" :click="submit_form">
+                    确定预约
+                </div>
+            </div>
+        </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</body>
+
+</html>
+
+

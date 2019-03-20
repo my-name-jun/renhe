@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>jyjj</title>
+</head>
+<body :controller="vm" class="ms-controller">
+<!--GEN_HEADER-->
+<!--首页第一页-->
+    <div class="home_top">
+        <div class="icon_header">
+            <img :attr="{src:@nj15}" alt="">
+        </div>
+        <div class="form_appointment">
+            <h2>提交资料免费预约</h2>
+            <form action="">
+                <div class="form_input">
+                    <span>宝宝年龄</span>
+                    <div class="btn-group selectDown">
+                        <!--<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+                            <!--0岁 <span class="caret"></span>-->
+                        <!--</button>-->
+                        <!--<ul class="dropdown-menu">-->
+                            <!--<li><a href="#">0岁</a></li>-->
+                            <!--<li><a href="#">1岁</a></li>-->
+                            <!--<li><a href="#">2岁</a></li>-->
+                            <!--<li><a href="#">3岁</a></li>-->
+                        <!--</ul>-->
+                        <select name="宝宝年龄" id="select" class="select_age">
+                            <option value="" value="0">0岁</option>
+                            <option value="" value="3">3万</option>
+                            <option value="" value="5">5万</option>
+                            <option value="" value="10">10万</option>
+                            <option value="" value="20">20万</option>
+                        </select>
+                        <img :attr="{src:@nj2}" alt="" class="select_icon">
+                    </div>
+                </div>
+                <div class="form_input">
+                    <span>您的电话</span>
+                    <input type="text" placeholder="这里填写电话" id="phone" maxlength="11">
+                </div>
+                <div class="form_input">
+                    <span>您的姓名</span>
+                    <input type="text" placeholder="这里填写姓名" id="name">
+                </div>
+
+                <div class="agreen">
+                    <img :attr="{src:@nj5}" alt="">
+                    <span class="agreen_span">
+                        我同意接受致电和
+                        <a  data-toggle="modal" data-target="" href=""  onclick="return false;"><span class="deepen_word" :click="mymodol">
+                            【个人信息使用授权】
+                        </span></a>
+                    </span>
+                </div>
+                <div class="submit1" :click="submit_form">
+                    <span class="submit_span">确认提交</span>
+                </div>
+            </form>
+        </div>
+    </div>
+<!-- GEN_COMPONENT -->
+<!--首页第二页-->
+    <div class="home2">
+        <h3>和宝宝教育金保险</h3>
+        <h3>四大特色</h3>
+        <div class="bgr"></div>
+
+        <!--四个板块-->
+        <span class="plate4">
+            <img :attr="{src:@nj3}" alt=""><br>
+            <span class="deepen_plate4_word">10元起投门槛低</span><br>
+            <span class="plate4_word">爸妈压力小</span><br>
+            <span class="plate4_word">可充分利用闲散资金</span><br>
+            <span class="plate4_word">给孩子储备</span>
+        </span>
+        <span class="plate4">
+            <img :attr="{src:@nj4}" alt=""><br>
+            <span class="deepen_plate4_word">灵活的加保方式</span><br>
+            <span class="plate4_word">满13岁前随时可加保</span><br>
+            <span class="plate4_word">1元起加</span><br>
+            <span class="plate4_word">也可设置定期扣款</span>
+        </span>
+        <span class="plate4">
+            <img :attr="{src:@nj7}" alt=""><br>
+            <span class="deepen_plate4_word">连续四年领钱</span><br>
+            <span class="plate4_word">孩子18-21周岁每年领钱</span><br>
+            <span class="plate4_word">提供大学及再深造/创业</span><br>
+            <span class="plate4_word">资金</span>
+        </span>
+        <span class="plate4">
+            <img :attr="{src:@nj8}" alt=""><br>
+            <span class="deepen_plate4_word">有趣又有爱</span><br>
+            <span class="plate4_word">留下每一笔投保心情</span><br>
+            <span class="plate4_word">留存对孩子关爱的点滴</span><br>
+            <span class="plate4_word">也可设置定期扣款</span>
+        </span>
+    </div>
+
+<!--第三页首页-->
+
+    <div style="padding-bottom: 10%">
+        <h3 class="home3_header">投保案例</h3>
+        <img :attr="{src:@nj9}" alt="" class="home3_img">
+
+        <img :attr="{src:@nj10}" alt="" class="list_img">
+        <div class="list_word">
+            王女士在宝宝满月后，给宝宝投保<span class="deepen_home3_word">1万元</span>的和宝宝教育金
+            <br>
+            <span class="home3_list_words">王女士在保单生效日时，设置了从次月起<span class="deepen_home3_word">每月定投1000元，</span>直至宝宝年满13周岁（含）</span>
+            <span class="home3_list_words">宝宝18岁-20岁时，连续三年，每年可领取约<span class="deepen_home3_word">1.5万元</span>,三年共领取<span class="deepen_home3_word">4.5万元</span></span>
+            <span class="home3_list_words" style="margin-top: 12%">宝宝21岁时，一次性领取约<span class="deepen_home3_word">25.6万元</span></span>
+            <span class="home3_list_words"><span class="deepen_home3_word">总计投入约17.7万元,领取约30.1万元</span></span>
+        </div>
+        <div class="home3_footer_word">
+            *投保案例演示仅供参考，实际领取金额以保单条款载明为准。
+        </div>
+    </div>
+
+    <!-- GEN_FOOTER -->
+
+<!--第四页首页-->
+
+    <div class="home4">
+        <h3 class="footer_title">关于招商仁和</h3>
+        <div class="footer_div">
+            <img :attr="{src:@nj11}" alt="">
+            <span class="footer_span" style="letter-spacing: 0.13em">招商仁和人寿源于招商局</span>
+            <span class="footer_span">1875年创办的中国第一家民</span>
+            <span class="footer_span" style="letter-spacing: 0.05em">族保险公司，拥有143年历</span>
+            <span class="footer_span">史。</span>
+        </div>
+
+        <div class="footer_div">
+            <img :attr="{src:@nj12}" alt="">
+            <span class="footer_span">2017年6月30日，中国保监
+            <br>会批复招商局仁和人寿保险
+            <br>股份有限公司开业，注册资<br>
+            本50亿。</span>
+        </div>
+
+        <div class="footer_div">
+            <img :attr="{src:@nj13}" alt="">
+            <span class="footer_span" style="margin-top: 5%">中国移动、招商局分别持股<br>20%，并列第一大股东。</span>
+        </div>
+        <div style="clear: both"></div>
+    </div>
+
+<!--预约按钮-->
+<div class="footer_submit" id="submit" :click="scroll_top">
+    立即预约
+</div>
+
+
+<!--模态框-->
+<div class="modal fade modal_informal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    <img :attr="{src:@nj14}" alt="" class="modal_img">
+                </button>
+                <h4 class="modal_title" id="myModalLabel">
+                    个人信息使用授权
+                </h4>
+                <div class="modal_words">
+                    本人在此授权招商局仁和人寿保险有限公司（简称“招商仁和”及招商仁和授权的第三方服务者在中国法律允许的范围内，收集此次申请
+                    相关的本人的个人信息，已知晓并同意招商仁和在下列情况下使用本人的个人信息：<br>
+                    <span>
+                        (1)审核本次申请，并/或提供相关后续保险服务；
+                    </span><br>
+                    <span>
+                        (2)&nbsp;进行保险产品的销售及相关数据处理；
+                    </span><br>
+                    <span>
+                        (3)根据相关法律法规或招商仁和的相关制度要求。
+                    </span><br>
+                    <div class="modal_footer_word">
+                        招商仁和对上述信息负有保密义务，并采取措施保证授权方信息安全。
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</body>
+
+</html>
+
+

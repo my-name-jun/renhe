@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>login</title>
+<link href="/igi/akg123_uat/css/common.js.css?63e84917e3f81cea78ee" rel="stylesheet"><link href="/igi/akg123_uat/css/akg_login.css?63e84917e3f81cea78ee" rel="stylesheet"></head>
+<body :controller="vm" class="ms-controller">
+<div class="container">
+    <!-- GEN_HEADER -->
+
+    <div class="form-group">
+        <label for="name_input">name_输入框</label>
+        <input id="name_input" type="text" class="form-control" placeholder=""
+               :duplex="@name_input">
+    </div>
+
+    <div class="form-group">
+        <label for="mobile_input">mobile_输入框</label>
+        <input id="mobile_input" type="text" class="form-control" placeholder=""
+               :duplex="@mobile_input">
+    </div>
+
+    <div class="radio">
+        <label for="gender_radio" style="padding-left: 0">gender_单选组件</label>
+        <div id="gender_radio" :for="(index,item) in @gender_radio_candidate_array">
+            <label :attr="{for:'gender_radio' + @index}">
+                <input :attr="{id:'gender_radio' + @index,value:@item.key,name:'gender_radio'}" type="radio"
+                       ms-duplex="@gender_radio_selected_value"/>
+                {{@item.value}}
+            </label>
+        </div>
+    </div><div class="form-group">
+    <label id="career_select_label">career_选择器</label>
+    <select name="career_select" id="career_select" class="career_select career_select_test form-control" :duplex="@career_selected_item">
+        <option value="">请选择</option>
+        <option :for='(index,item) in @career_candidate_select_array'
+                :attr="{value:@item.key}">
+            {{@item.value}}
+        </option>
+    </select>
+</div><div class="form-group">
+    <div for="datetimepicker">日期选择</div>
+    <div>
+        <input class="form-control" value="2000-01-01" type="text" id="birthday_dateTimePicker" placeholder="请选择日期"
+               :duplex="@birthday_selectedDate" readonly/>
+    </div>
+</div>
+    <div class="radio">
+        <label for="icIsLongValid_radio" style="padding-left: 0">icIsLongValid_单选组件</label>
+        <div id="icIsLongValid_radio" :for="(index,item) in @icIsLongValid_radio_candidate_array">
+            <label :attr="{for:'icIsLongValid_radio' + @index}">
+                <input :attr="{id:'icIsLongValid_radio' + @index,value:@item.key,name:'icIsLongValid_radio'}" type="radio"
+                       ms-duplex="@icIsLongValid_radio_selected_value"/>
+                {{@item.value}}
+            </label>
+        </div>
+    </div><div class="form-group">
+    <div for="datetimepicker">日期选择</div>
+    <div>
+        <input class="form-control" value="2000-01-01" type="text" id="icExpiryDay_dateTimePicker" placeholder="请选择日期"
+               :duplex="@icExpiryDay_selectedDate" readonly/>
+    </div>
+</div>
+    <div id="contact_address_userInfo_contact_address">
+        <label>contact_address_userInfo_日期组件</label>
+        <div class="col-xs-12 col-sm-12 contact_address_userInfo_selectBox">
+            <select name="contact_address_userInfo_province" id="contact_address_userInfo_province" class="contact_address_userInfo_province contact_address_userInfo_province_test col-xs-4 col-sm-4 contact_address_userInfo_height"
+                    :duplex="@contact_address_userInfo_selected_province">
+                <option value="">请选择</option>
+                <option :for='(index,item) in @contact_address_userInfo_candidate_provinces'
+                        :attr="{value:@item.id}">
+                    {{@item.name}}
+                </option>
+            </select>
+            <select name="contact_address_userInfo_city" id="contact_address_userInfo_city" class="contact_address_userInfo_city contact_address_userInfo_city_test col-xs-4 col-sm-4 contact_address_userInfo_height" :duplex="@contact_address_userInfo_selected_city">
+                <option value="">请选择</option>
+                <option :for='(index,item) in @contact_address_userInfo_candidate_cities'
+                        :attr="{value:@item.id}">
+                    {{@item.name}}
+                </option>
+
+            </select>
+
+            <select name="contact_address_userInfo_district" id="contact_address_userInfo_district" class="contact_address_userInfo_district contact_address_userInfo_district_test col-xs-4 col-sm-4 contact_address_userInfo_height"
+                    :duplex="@contact_address_userInfo_selected_district">
+                <option value="">请选择</option>
+                <option :for='(index,item) in @contact_address_userInfo_candidate_districts'
+                        :attr="{value:@item.id}">
+                    {{@item.name}}
+                </option>
+
+            </select>
+        </div>
+
+        <input id="contact_address_userInfo_detail" type="text" class="contact_address_userInfo_detail_addr contact_address_userInfo_detail_addr_test form-control "
+               :duplex="@contact_address_userInfo_selected_detail">
+    </div><!-- GEN_COMPONENT -->
+
+    <!-- GEN_FOOTER -->
+</div>
+<script src="/igi/akg123_uat/js/common.js.js?63e84917e3f81cea78ee"></script><script src="/igi/akg123_uat/js/akg_login.js?63e84917e3f81cea78ee"></script></body>
+
+</html>
+

@@ -1,0 +1,181 @@
+@import "../../lib/common.scss";
+*
+{
+  padding: 0;
+  margin: 0;
+}
+.ms-controller{
+  visibility: hidden
+}
+.home
+{
+  width: 100%;
+  height: auto;
+}
+.home_bck
+{
+  background: url("./img/m1.png") no-repeat;
+  background-size: 100%;
+  padding: 25% 0 41%;
+}
+.bck_words
+{
+  color: #E7EDFC;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.4em;
+}
+.bck_number
+{
+  display: block;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 5.3em;
+}
+.content
+{
+  margin: 5% auto;
+  text-align: center;
+  color: #CACED2;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+}
+.submit_appointment
+{
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2em;
+  letter-spacing: 0.1em;
+  color: white;
+  background-color: #F1B811;
+  padding: 4%;
+  border-radius: 30px;
+}
+.remarks
+{
+  color: #CACED2;
+  text-align: center;
+  margin: 3% auto;
+}
+.chart_title
+{
+  color: #666F7C;
+  font-size: 2.5em;
+  margin: 8% auto 0;
+  text-align: center;
+}
+.chart
+{
+  display: block;
+  width: 92%;
+  margin: 5% auto;
+}
+.company_title
+{
+  text-align: center;
+  margin: 7% auto 0;
+  color: #868E98;
+  font-size: 2.2em;
+}
+.company_content
+{
+  width: 81%;
+  margin: 3% auto;
+  color: #CACED2;
+  text-align: left;
+  font-size: 1.5em;
+}
+.footer_ican
+{
+  display: block;
+  width: 43%;
+  text-align: center;
+  margin: 2% auto;
+}
+
+//模态框
+.input_form
+{
+  width: 90%;
+  margin: 3% auto;
+  padding: 3% 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+.input_form input
+{
+  //color: #CCCCCC;
+  border: 0;
+  font-size: 1.6em;
+  outline: none;
+}
+input::-webkit-input-placeholder { /* WebKit browsers */
+  color:    #CCCCCC;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color:    #CCCCCC;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color:    #CCCCCC;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color:    #CCCCCC;
+}
+//去掉select默认样式
+select {
+  /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+  border: solid 1px #000;
+  /*很关键：将默认的select选择框样式清除*/
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+}
+
+.code_input
+{
+  display: inline-block;
+  border-left: 1px solid #e5e5e5;
+  color: #F0C121;
+  font-size: 1.6em;
+  padding-left: 4%;
+  margin-left: 6%;
+}
+.count_down
+{
+  display: none;
+  border-left: 1px solid #e5e5e5;
+  color: #CCCCCC;
+  font-size: 1.6em;
+  padding-left: 10%;
+  margin-left: 8%;
+  letter-spacing: 0.1em;
+  //display: none;
+}
+
+.back_word
+{
+  font-size: 1.6em;
+}
+.input_form select
+{
+  border: 0;
+  outline: none;
+  margin-left: 17%;
+  margin-right: 1%;
+  font-size: 1.6em;
+}
+.sure_submit
+{
+  width: 80%;
+  margin: 13% auto 5%;
+  padding: 3%;
+  color: white;
+  background-color: #F1B912;
+  border-radius: 25px;
+  font-size: 1.8em;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+//GEN_SASS
